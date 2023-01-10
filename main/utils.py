@@ -7,7 +7,6 @@ class PostHandler:
 
     def load_posts(self):
         posts = []
-        load_posts = self.load_posts()
         try:
             with open(self.path,  encoding='utf-8') as file:
                 posts = json.load(file)

@@ -15,7 +15,7 @@ def index_page():
 def search_page():
     substr = request.args.get('s')
     logging.info(f'Поиск: {substr}')
-    post_handler = PostHandler(r'C:\Users\Petr Didur\PycharmProjects\project12\posts.json')
+    post_handler = PostHandler('posts.json')
     posts, error = post_handler.search_posts(substr)
     if error:
        logging.info(f'Ошибка:{error}')

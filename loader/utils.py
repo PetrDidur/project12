@@ -7,7 +7,7 @@ def save_picture(picture):
 
     picture.save(f'./uploads/{filename}')
 
-    return f'uploads/{filename}'
+    return f'/uploads/images/{filename}'
 
 
 
